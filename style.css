@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  width: 100%;
+
+  object-fit: cover;
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+
+  min-height: 100%;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+
+  border: 3px solid #fff;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: left;
+  padding: 10px;
+  color: #fff;
+}
+
+.box-one,
+.box-two,
+.box-three {
+  top: 40%;
+}
+
+.box-one {
+  left: 20vw;
+  transform: rotate(15deg);
+}
+
+.box-two {
+  left: 40vw;
+  transform: rotate(-15deg);
+}
+
+.box-three {
+  left: 60vw;
+  transform: rotate(15deg);
+}
